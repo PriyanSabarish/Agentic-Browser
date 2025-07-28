@@ -1,0 +1,20 @@
+{
+  "name": "panlama",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "priyansabarish",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^36.3.2"
+  },
+  "dependencies": {
+    "@google/genai": "^1.11.0",
+    "ollama": "^0.5.16"
+  }
+}

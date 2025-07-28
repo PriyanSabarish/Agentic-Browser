@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#main-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+
+#tabBars {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  background: #e0e0e0;
+  white-space: nowrap;
+}
+
+#tabBar {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  flex-grow: 1;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #7d7d7d;
+  color: white;
+  height: 30px;
+  padding: 0 10px;
+  margin-right: 5px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #4d4d4d;
+}
+
+.tab button.close {
+  background: transparent;
+  border: none;
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+input#myInput {
+  width: 100%;
+  height: 1.5rem;
+  padding: 5px;
+  border: none;
+}
+
+
+#left-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* border-right: 1px solid #ccc; */
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+#right-pane {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  flex-shrink: 0;
+  padding: 10px;
+  overflow: hidden; 
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+#response {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  overflow: hidden;
+}
+
+.response-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#text-section {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#output-text {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#askhim {
+  padding-top: 10px;
+}
+/* 
+#main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#left-pane {
+  width: 70%;
+  min-width: 200px;
+  max-width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#splitter {
+  width: 5px;
+  cursor: col-resize;
+  background-color: #ccc;
+}
+
+#right-pane {
+  flex-grow: 1;
+  padding: 10px;
+  background: #f5f5f5;
+  overflow-y: auto;
+} */

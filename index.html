@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Panalama!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+ <body>
+  <div id="main-container">
+    <div id="left-pane">
+      <div id="tabBars">
+        <div id="tabBar"></div>
+        <button id="new-tab">+</button>
+        <button id="clicktab">click here</button>
+      </div>
+      <input type="text" id="myInput" placeholder="Enter a URL (e.g., https://www.google.com)" />
+      <div id="webview-container"></div>
+    </div>
+
+    <div id="splitter"></div> <!-- Draggable splitter -->
+<div id="right-pane">
+  <div id="response">
+
+    <div class="response-section" id="text-section">
+      <h3>Text Content</h3>
+      <pre id="output-text">No text yet.</pre>
+    </div>
+  </div>
+
+  <div id="askhim">
+    <input type="text" id="userReq" placeholder="ena thambi epdi iruka nu kelu" />
+    <button id="ask-btn">Send</button>
+  </div>
+</div>
+
+  </div>
+
+  <script src="./render.js" type="module"></script>
+</body>
+
+</html>
